@@ -9,7 +9,7 @@ function App() {
   //State
   const [size, setSize] = useState("All");
   const [sort, setSort] = useState("Lastest");
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(data.products);
   const [cartItems, setCartItems] = useState([]);
 
   // Use Effect
