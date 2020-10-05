@@ -42,7 +42,10 @@ function Cart({ cartItems, removeFromCart, createOrder }) {
             {cartItems.map((item) => (
               <li key={item._id}>
                 <div>
-                  <img src={item.image} alt={item.title} />
+                  <img
+                    src={require(`../assets${item.image}`)}
+                    alt={item.title}
+                  />
                 </div>
                 <div>{item.title}</div>
                 <div className="right">
