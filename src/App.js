@@ -15,11 +15,11 @@ function App() {
   // Use Effect
   useEffect(() => {
     loadCartItems();
-    const fetchData = async () => {
-      const { data } = await axios.get("/api/products");
-      setProducts(data);
-    };
-    fetchData();
+    // const fetchData = async () => {
+    //   const { data } = await axios.get("/api/products");
+    //   setProducts(data);
+    // };
+    // fetchData();
   }, []);
   useEffect(() => {
     saveCartItems();

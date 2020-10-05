@@ -22,7 +22,7 @@ function Product({ products, addToCart }) {
               <div className="product">
                 <a href={`#${product._id}`}>
                   <img
-                    src={product.image}
+                    src={require(`../assets${product.image}`)}
                     alt={product.title}
                     onClick={() => openModal(product)}
                   />
